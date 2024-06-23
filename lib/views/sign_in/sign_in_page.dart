@@ -4,6 +4,7 @@ import 'package:olaha_travel_app/common/widgets/app_button.dart';
 import 'package:olaha_travel_app/common/widgets/app_textformfield.dart';
 import 'package:olaha_travel_app/common/widgets/social_button_widget.dart';
 import 'package:olaha_travel_app/utils/app_color.dart';
+import 'package:olaha_travel_app/navigation_menu/navigation_menu.dart';
 import 'package:olaha_travel_app/views/sign_up/sign_up_page.dart';
 
 class SignInPage extends StatelessWidget {
@@ -78,7 +79,13 @@ class SignInPage extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  const AppButton(
+                  AppButton(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const NavigationMenu()));
+                    },
                     bgColor: AppColor.primaryColor,
                     textColor: AppColor.blackColor,
                     text: "Sign In",

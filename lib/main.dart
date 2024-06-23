@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:olaha_travel_app/navigation_menu/navigation_menu.dart';
 import 'package:olaha_travel_app/views/splash/splash_page.dart';
 
 Future<void> main() async {
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashPage(),
+      //  home: SplashPage(),
+      home: NavigationMenu(),
     );
   }
 }
