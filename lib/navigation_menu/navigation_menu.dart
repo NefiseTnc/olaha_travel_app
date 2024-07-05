@@ -38,6 +38,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
           width: deviceWidth,
           height: deviceBottomPadding + 45,
           decoration: const BoxDecoration(
+              color: Colors.white,
               border: Border(top: BorderSide(color: AppColor.grayColor2))),
           child: Padding(
             padding: EdgeInsets.symmetric(
