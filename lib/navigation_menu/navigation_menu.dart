@@ -32,6 +32,8 @@ class _NavigationMenuState extends State<NavigationMenu> {
     return Scaffold(
         resizeToAvoidBottomInset: false,
         extendBody: true,
+        backgroundColor: Colors.white,
+        body: pages[_currentIndex],
         bottomNavigationBar: Container(
           width: deviceWidth,
           height: deviceBottomPadding + 45,
